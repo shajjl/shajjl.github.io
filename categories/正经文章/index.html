@@ -65,24 +65,25 @@
 	
 </head>
     
-		
-<!-- Layouts -->
-
-
-
-<!--  代码渲染  -->
-<link rel="stylesheet" href="/css/prism_coy.css">
-<link rel="stylesheet" href="/css/typo.css">
-<!-- 文章页 -->
-<body class="is-loading">
+		<body class="is-loading">
     <!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in">
+    <div id="wrapper" class="fade-in overlay">
         <!-- Intro 头部显示 s -->
+                <div id="intro">
+            <h1>This is<br>
+                        shajjl </h1>
+            <p> A better day!
+            </p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
     <a href="/" class="logo">GO</a>
 </header>
+        <!-- Header 头部logo end -->
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special">
             <ul class="menu links">
@@ -96,7 +97,7 @@
 	            <a href="#s1">分类</a>
 	                    <ul class="submenu">
 	                        <li>
-	                        <a class="category-link" href="/categories/test-1/">test.1</a></li><li><a class="category-link" href="/categories/其它/">其它</a></li><li><a class="category-link" href="/categories/新闻/">新闻</a></li><li><a class="category-link" href="/categories/题解/">题解</a>
+	                        <a class="category-link" href="/categories/新闻/">新闻</a></li><li><a class="category-link" href="/categories/正经文章/">正经文章</a></li><li><a class="category-link" href="/categories/题解/">题解</a>
 	                    </li></ul>
 	        </li>
 	        
@@ -143,46 +144,55 @@
                     
 			</ul>
 </nav>
+        <!-- Nav 导航条 end -->
+        <!-- Main 主要部分 start -->
+        
+        <!-- 文章列表   s -->
+        <div id="main" style="background-color: transparent; padding:0;">
+        <section class="link_container" style="margin-top: 0; background-color: transparent; ">
+            <div class="link_row">
+                <!-- 文章sample  s-->
 
-        <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/me.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>测试</h2></a>
-            </div>
-            <!-- Post -->
-            <div class="typo" style="padding: 3rem;">
-                <h1 id="Hello"><a href="#Hello" class="headerlink" title="Hello!"></a>Hello!</h1><p>1.hexo<br>1.hexooo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout&lt;&lt;&quot;hello world!&quot;;</span><br></pre></td></tr></table></figure></p>
-<h1 id="welcome"><a href="#welcome" class="headerlink" title="welcome!"></a>welcome!</h1><h2 id="I’m-shajjl"><a href="#I’m-shajjl" class="headerlink" title="I’m shajjl"></a>I’m shajjl</h2><h1 id="看看这个"><a href="#看看这个" class="headerlink" title="看看这个"></a>看看这个</h1><p><img src="/images/0b1c10ed893f77dfec2b7d1e415efcb2.jpg" alt=""></p>
-<h3 id="这个也不错"><a href="#这个也不错" class="headerlink" title="这个也不错"></a>这个也不错</h3><p><img src="/images/9RBOTs.gif" alt=""></p>
-
-            </div>
-
-            <!-- Post Comments -->
+                
+                <div class="6u 12u(narrower)">
+                    <section class="link_box special">
+                       <a href="/2019/02/02/关于博客/">
+                        <div class="page_title" style="background-image: url(/images/GYBK.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                            <!--标题-->
+                            <h2 class="page_title_text"> 关于博客 </h2>
+                            <!--段落-->
+                        </div>
+                        </a>
+                        <div class="home-post-info">
+                            <!-- Author Avatar -->
+                            <div class="home-post-info-author-avatar">
+                                <h6><span class="home-post-info-data">2019-02-02</span></h6>
+                                <div class="home-post-info-Category">
+                                    <!-- Category -->
+                                    <span>
+                            <h6>
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
+                                <a class="post_category-link" href="/categories/正经文章/">正经文章</a></a>
+                            </h6>
+                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 文章sample  e-->
             
-    <!-- 使用 valine -->
-<div id="comment">
-        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-    <div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'Mw7d4FE5rfmyiOyKvDU9zDcQ-gzGzoHsz',
-            appKey: 'VYResaKHgLOJvvfL3diOgE1a',
-            notify: true,
-            verify: true,
-            avatar: 'retro',
-            placeholder: '留下你的评论 φ(>ω<*)',
-        })
-    </script>
-</div>
-<style>
-   #comment{
-        padding: 2pc;
-    }
-</style>
-
-
+            </div>
+        </section>
         </div>
+        <!-- 文章列表   end -->
+        <!-- Main 主要部分 end -->
+        <!-- footer  页码 start-->
+        <footer style="text-align: center; padding-top: 2em;">
+  
+</footer>
+
+        <!-- footer  页码 end-->
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
@@ -193,10 +203,11 @@
                 <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 			
         </div>
+        <!-- Copyright 版权 end -->
     </div>
+    <!-- Wrapper 外包 e-->
+    <!-- Scripts -->
 </body>
-
-
 
  	
 </html>
