@@ -145,13 +145,25 @@
 </nav>
 
         <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>标签</h2></a>
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/pic03.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>题解 P1157 【组合的输出】</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h2 id="2019年2月15日"><a href="#2019年2月15日" class="headerlink" title="2019年2月15日"></a><strong>2019年2月15日</strong></h2><h2 id="2019年2月13日"><a href="#2019年2月13日" class="headerlink" title="2019年2月13日"></a><strong>2019年2月13日</strong></h2><p>-<a href="https://shajjl.github.io/2019/02/13/%E7%AB%9E%E4%BA%89%E6%80%A7%E5%85%B1%E5%A4%84/" target="_blank" rel="noopener">竞争性共处</a></p>
-<p>-<a href="https://shajjl.github.io/2019/02/02/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">关于博客</a></p>
+                <h2 id="谁来挑战我的短代码！！嘻"><a href="#谁来挑战我的短代码！！嘻" class="headerlink" title="谁来挑战我的短代码！！嘻~~"></a>谁来挑战我的短代码！！嘻~~</h2><p>其实小生还怪不好意思的，从来就没弄懂递推和回溯……</p>
+<h3 id="这道题的重点："><a href="#这道题的重点：" class="headerlink" title="这道题的重点："></a>这道题的重点：</h3><p>1：存储：这道题<del>很烦的</del>要我们把每次挑出来的组合都输出；所以我建了一个数组，来储存1~r个数；</p>
+<p>2：回溯：这里我设了一个计数器t，只要还没到r个数，就继续套函数，到下一遍；</p>
+<p>3：判断：（1）如果没有if(i&gt;a[t-1])这一句的话，就会输出所有的排列，而不是组合，因为当t=r时，函数输出并回溯，a[t]就会等于a[t-1]；</p>
+<p>就拿n=5；r=3举例：比如现在第一遍挑数结束t=3，必然会输出第1,2,3种组合1 2 3，1 2 4，1 2 5然后函数回溯，现在数组a中a[1]=1;a[2]=2;a[3]=3;回到t=2；继续for(i=t;i&lt;=n;i++)的循环由于是第二次，所以i++，i变成3；所以a[2]=3；现在数组变成a[1]=1;a[2]=3;a[3]=5;</p>
+<p>现在t！=r；所以进入函数p（t+1）；开始循环，i=t=3并把a[t]赋值为3，现在就变成了a[1]=1;a[2]=3;a[3]=3;但组合不能出现相同的数；为避免回溯时发生重复，判断i是否大于上一个数，只要保证后面的数比前面的数大，就可以输出；</p>
+<p> （2）有可能没听懂？小生再用另一种方式讲一遍：如果我们要手算出所有组合，你会怎么做？</p>
+<p> 第一种肯定是从1开始加1 也就是1 2 3；</p>
+<p> 第二、三种发现3后面还有4 5；所以1 2 4,1 2 5；</p>
+<p> 第四种发现1 2 开头的没了，2+1，开始做1 3……以此类推这就是我们的<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for(i=t;i&lt;=n;i++)</span><br><span class="line">	 &#123;if(i&gt;a[t-1])</span><br><span class="line">	  &#123;a[t]=i;</span><br><span class="line">	   if(t!=r)p(t+1);</span><br></pre></td></tr></table></figure></p>
+<p>每次都要加1嘛，所以后面的数肯定比前面的大，也就解释了if(i&gt;a[t-1])的判断和p(t+1)的找下一个；找完1 2 找1 3 也就是t=r并且这个层次的3,4,5都循环后，回溯到t=2并i++；再找1 3开头的，以此类推<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;//P1157</span><br><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">#include&lt;cstring&gt;</span><br><span class="line">#include&lt;string&gt;</span><br><span class="line">#include&lt;iomanip&gt;</span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line">#include&lt;cmath&gt;</span><br><span class="line">#include&lt;vector&gt;</span><br><span class="line">#include&lt;set&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int a[23],n,r;</span><br><span class="line">int p(int t)</span><br><span class="line">&#123;</span><br><span class="line">	int i,j;</span><br><span class="line">	for(i=t;i&lt;=n;i++)</span><br><span class="line">	 &#123;if(i&gt;a[t-1])</span><br><span class="line">	  &#123;a[t]=i;</span><br><span class="line">	   if(t!=r)p(t+1);//感觉程序已经没什么好解释的了</span><br><span class="line">       else&#123;for(j=1;j&lt;=r;j++)printf(&quot;%3d&quot;,a[j]);cout&lt;&lt;endl;&#125;&#125;&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	cin&gt;&gt;n&gt;&gt;r;</span><br><span class="line">	p(1);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果还是没听懂，拿纸和笔自己推一遍就明白了</p>
+<p>顺便说一句代码如果看着长请自动忽略头文件…………</p>
+<p>顺手留赞，小生万分感激&lt;^_^&gt;</p>
 
             </div>
 
