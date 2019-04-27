@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/headpng.png">
+	<link rel="shortcut icon" href="/img/headpng.png">
+	
+			    <title>
+    shajjl's blog
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="shajjl's blog">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">GO</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/新闻/">新闻</a></li><li><a class="category-link" href="/categories/正经文章/">正经文章</a></li><li><a class="category-link" href="/categories/题解/">题解</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="关于">
+		                关于
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/linkk/" title="友链">
+		                友链
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/miccall" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/pic02.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>题解 P1706 【全排列问题】</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="c-朝这看！！！"><a href="#c-朝这看！！！" class="headerlink" title="c++朝这看！！！"></a>c++朝这看！！！</h2><p>看了这么多大佬的文章，小生忍不住也来写一篇题解；</p>
+<p>你知道吗，在#include <algorithm>里有一个函数，全排列函数：</algorithm></p>
+<h3 id="next-permutation！"><a href="#next-permutation！" class="headerlink" title="next_permutation！"></a>next_permutation！</h3><p>小生管他叫字典排函数；</p>
+<p>这个函数每运行一次就可以把数组排成下一个字典排数列；与之对应的是prev_permutation，即排出上一个字典序； <algorithm>里有好多实用的函数，建议大家百度一下；</algorithm></p>
+<p>回到题上，我们怎样求出所有的组合呢？这是个组合排列问题，形如下图：</p>
+<p><img src="https://cdn.luogu.org/upload/pic/27420.png" alt=""></p>
+<p>那么现在我们做的就是从n个数种拿n个数排列；也就是有n！种排列；理论完毕，代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;//P1706</span><br><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">#include&lt;cstring&gt;</span><br><span class="line">#include&lt;string&gt;</span><br><span class="line">#include&lt;iomanip&gt;</span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line">#include&lt;cmath&gt;</span><br><span class="line">#include&lt;vector&gt;</span><br><span class="line">#include&lt;set&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int a[10];</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int n,i,j=1,k;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	for(i=1;i&lt;=n;i++)</span><br><span class="line">	 &#123;a[i]=n-i+1;j*=i;&#125;//题目好像没说要从小到大输出</span><br><span class="line">     //但保险起见还是初始赋值为最大序列</span><br><span class="line">     //即a[1~n]=n~1;顺便计算n!</span><br><span class="line">	for(i=1;i&lt;=j;i++)</span><br><span class="line">	 &#123;next_permutation(a+1,a+n+1);</span><br><span class="line">	  for(k=1;k&lt;=n;k++)</span><br><span class="line">	   cout&lt;&lt;&quot;    &quot;&lt;&lt;a[k];//排一次输出一次</span><br><span class="line">       //空格建议复制</span><br><span class="line">	  cout&lt;&lt;endl;</span><br><span class="line">	 &#125;</span><br><span class="line">	 return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>观此题解小生不胜荣幸，请顺手留赞，感谢&lt;^~^&gt;</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 valine -->
+<div id="comment">
+        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'Mw7d4FE5rfmyiOyKvDU9zDcQ-gzGzoHsz',
+            appKey: 'VYResaKHgLOJvvfL3diOgE1a',
+            notify: true,
+            verify: true,
+            avatar: 'retro',
+            placeholder: '留下你的评论 φ(>ω<*)',
+        })
+    </script>
+</div>
+<style>
+   #comment{
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+                <li>Used: <a href="http://shajjl.github.io" style="border-bottom: none;">shajjl</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+            <ul>
+                <li>人生如逆旅，我亦是行人</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
