@@ -2,8 +2,8 @@
 <html>
 
 <head><meta name="generator" content="Hexo 3.8.0">
-	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.jpg">
-	<link rel="shortcut icon" href="/img/logo_miccall.jpg">
+	<link rel="bookmark" type="image/x-icon" href="/img/headpng.png">
+	<link rel="shortcut icon" href="/img/headpng.png">
 	
 			    <title>
     shajjl's blog
@@ -65,47 +65,37 @@
 	
 </head>
     
-		
-<!-- Layouts -->
-
-
-
-<!--  代码渲染  -->
-<link rel="stylesheet" href="/css/prism_coy.css">
-<link rel="stylesheet" href="/css/typo.css">
-<!-- 文章页 -->
-<body class="is-loading">
+		<body class="is-loading">
     <!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in">
+    <div id="wrapper" class="fade-in overlay">
         <!-- Intro 头部显示 s -->
+                <div id="intro">
+            <h1>This is<br>
+                        shajjl </h1>
+            <p> Believe me,I believe you,too
+            </p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
     <a href="/" class="logo">GO</a>
 </header>
+        <!-- Header 头部logo end -->
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special">
             <ul class="menu links">
 			<!-- Homepage  主页  --> 
 			<li>
 	            <a href="/" rel="nofollow">主页</a>
-	        </li>
-			<!-- categories_name  分类   --> 
-	        
-	        <!-- archives  归档   --> 
-	        
-	        
-		        <!-- Pages 自定义   -->
-		        
+			</li>
+			   <!-- Pages 自定义   -->
+			   
 		        <li>
-		            <a href="/about/" title="简历">
-		                简历
-		            </a>
-		        </li>
-		        
-		        <li>
-		            <a href="/tag/" title="标签">
-		                标签
+		            <a href="/about/" title="关于">
+		                关于
 		            </a>
 		        </li>
 		        
@@ -115,8 +105,18 @@
 		            </a>
 		        </li>
 		        
-
-
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/新闻/">新闻</a></li><li><a class="category-link" href="/categories/正经文章/">正经文章</a></li><li><a class="category-link" href="/categories/题解/">题解</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
             </ul>
             <!-- icons 图标   -->
 			<ul class="icons">
@@ -135,64 +135,74 @@
                     
 			</ul>
 </nav>
+        <!-- Nav 导航条 end -->
+        <!-- Main 主要部分 start -->
+        
+        <!-- 文章列表   s -->
+        <div id="main" style="background-color: transparent; padding:0;">
+        <section class="link_container" style="margin-top: 0; background-color: transparent; ">
+            <div class="link_row">
+                <!-- 文章sample  s-->
 
-        <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>post title</h2></a>
-            </div>
-            <!-- Post -->
-            <div class="typo" style="padding: 3rem;">
-                <h1 id="text"><a href="#text" class="headerlink" title="text"></a>text</h1><h2 id="test"><a href="#test" class="headerlink" title="test"></a>test</h2><h3 id="test-1"><a href="#test-1" class="headerlink" title="test"></a>test</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout&lt;&lt;&quot;hello world&quot;;</span><br></pre></td></tr></table></figure>
-<p>1.hexo<br>2.hexoo</p>
-<p>page:<br>        简历:<br>            link: “/about/“<br>        图库 :<br>            link: “/gallery/“<br>        标签:<br>            link: “/tag/“</p>
-<pre><code>#自定义标签名
-#   link：“路径”
-        #自定义标签名
-#   link：“路径”
-</code></pre>
-            </div>
-
-            <!-- Post Comments -->
+                
+                <div class="6u 12u(narrower)">
+                    <section class="link_box special">
+                       <a href="/2019/08/12/新建文本文档/">
+                        <div class="page_title" style="background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                            <!--标题-->
+                            <h2 class="page_title_text">  </h2>
+                            <!--段落-->
+                        </div>
+                        </a>
+                        <div class="home-post-info">
+                            <!-- Author Avatar -->
+                            <div class="home-post-info-author-avatar">
+                                <h6><span class="home-post-info-data">2019-08-12</span></h6>
+                                <div class="home-post-info-Category">
+                                    <!-- Category -->
+                                    <span>
+                            <h6>
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
+                                </a>
+                            </h6>
+                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 文章sample  e-->
             
-    <!-- 使用 valine -->
-<div id="comment">
-        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-    <div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'Mw7d4FE5rfmyiOyKvDU9zDcQ-gzGzoHsz',
-            appKey: 'VYResaKHgLOJvvfL3diOgE1a',
-            notify: true,
-            verify: true,
-            avatar: 'retro',
-            placeholder: '留下你的评论 φ(>ω<*)',
-        })
-    </script>
-</div>
-<style>
-   #comment{
-        padding: 2pc;
-    }
-</style>
-
-
+            </div>
+        </section>
         </div>
+        <!-- 文章列表   end -->
+        <!-- Main 主要部分 end -->
+        <!-- footer  页码 start-->
+        <footer style="text-align: center; padding-top: 2em;">
+  
+</footer>
+
+        <!-- footer  页码 end-->
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
                 <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
                 <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+                <li>Used: <a href="http://shajjl.github.io" style="border-bottom: none;">shajjl</a></li>
             </ul>
             
                 <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 			
+            <ul>
+                <li>人生如逆旅，我亦是行人</li>
+            </ul>
         </div>
+        <!-- Copyright 版权 end -->
     </div>
+    <!-- Wrapper 外包 e-->
+    <!-- Scripts -->
 </body>
-
-
 
  	
 </html>
