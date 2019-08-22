@@ -7,7 +7,7 @@
 			    <title>
     shajjl's blog
     </title>
-    <link rel="stylesheet" type="text/css" href="https://www.example.com/path/to/waifu.css">
+    <link rel="stylesheet" type="text/css" href="https:/shajjl.github.io/live2d/assets/waifu.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/css/mic_main.css">
@@ -407,7 +407,7 @@
             live2d_settings['modelId'] = 5;                  // 默认模型 ID
             live2d_settings['modelTexturesId'] = 1;          // 默认材质 ID
             /* 在 initModel 前添加 */
-            initModel("https://www.example.com/path/to/waifu-tips.json")
+            initModel("https:/shajjl.github.io/live2d/assets/waifu-tips.json")
         </script>
 </footer>
 
@@ -430,7 +430,29 @@
     </div>
     <!-- Wrapper 外包 e-->
     <!-- Scripts -->
+    <script src="live2d/assets/autoload.js"></script>
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
     
+    <script src="live2d/assets/waifu-tips.js"></script>
+    <script src="live2d/assets/live2d.js"></script>
+    
+    <script type="text/javascript">
+        live2d_settings['modelId'] = 5;
+        live2d_settings['modelTexturesId'] = 1;
+    	initModel("https://www.example.com/path/to/waifu-tips.json")
+    </script>
 </body>
 
  	
