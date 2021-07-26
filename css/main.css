@@ -1833,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #670071;
+  background: #ff49ee;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1986,7 +1986,7 @@ pre .javascript .function {
   display: inline-block;
 }
 .theme-next #ds-thread #ds-reset {
-  color: #555;
+  color: #8e54ff;
 }
 .theme-next #ds-thread #ds-reset .ds-replybox {
   margin-bottom: 30px;
