@@ -1550,7 +1550,7 @@ pre .javascript .function {
 }
 .posts-expand .post-tags {
   margin-top: 40px;
-  text-align: center;
+  text-align: right;
 }
 .posts-expand .post-tags a {
   display: inline-block;
@@ -1833,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fa4fff;
+  background: #c7ffe2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2963,7 +2963,7 @@ pre .javascript .function {
   text-align: center;
   margin-top: 20px;
   padding: 3px 0 0;
-  border-top: 1px dotted #ccc;
+  border-top: 2px solid #000;
 }
 .links-of-blogroll-title {
   margin-top: 0;
@@ -3002,7 +3002,7 @@ pre .javascript .function {
   }
 }
 body {
-  background: url("/images/background.jpg");
+  background: url("/images/background1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
