@@ -276,14 +276,14 @@ h6 {
 p {
   margin: 0 0 20px 0;
 }
-a {
+a {//超链接文字颜色
   color: #6f6dff;
   text-decoration: none;
   outline: none;
   border-bottom: 1px solid rgb(255, 255, 255);
   word-wrap: break-word;
 }
-a:hover {
+a:hover {//超链接文字悬停颜色
   color: #848484;
   border-bottom-color: rgb(255, 203, 125);
 }
