@@ -1833,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e06634;
+  background: #17ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2712,7 +2712,7 @@ pre .javascript .function {
   margin-top: 300px;
   width: 240px;
   background: rgba(255,255,255,0.4);
-  box-shadow: 3px 2px 2px 1px #a7a7a7;
+  box-shadow: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar {
