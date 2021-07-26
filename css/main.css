@@ -1833,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e006cc;
+  background: #e06634;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1984,16 +1984,6 @@ pre .javascript .function {
 }
 .cc-license img {
   display: inline-block;
-}
-.footer p a {
-  color: #0593d3;
-  border-bottom: none;
-  border-bottom: 1px solid #0593d3;
-}
-.footer p a:hover {
-  color: #fc6423;
-  border-bottom: none;
-  border-bottom: 1px solid #fc6423;
 }
 .theme-next #ds-thread #ds-reset {
   color: #555;
@@ -3010,15 +3000,6 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
-}
-.post-body a:not(.btn) {
-  color: ##8e54ff;
-  border-bottom: #fff;
-}
-.post-body a:not(.btn):hover {
-  color: #8e8c8c;
-  border-bottom: #ffb500;
-  text-decoration: underline;
 }
 body {
   background: url("/images/background.jpg");
