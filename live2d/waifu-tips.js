@@ -23,14 +23,15 @@ function loadWidget(config) {
 			<div id="waifu-tool">
 				<span class="fa fa-lg fa-comment"></span>
 				<span class="fa fa-lg fa-paper-plane"></span>
-				<span class="fa fa-lg fa-user-circle"></span>
-				<span class="fa fa-lg fa-street-view"></span>
+
 				<span class="fa fa-lg fa-camera-retro"></span>
 				<span class="fa fa-lg fa-info-circle"></span>
 				<span class="fa fa-lg fa-times"></span>
 			</div>
 		</div>`);
 	// https://stackoverflow.com/questions/24148403/trigger-css-transition-on-appended-element
+	//<span class="fa fa-lg fa-user-circle"></span> 更换模型已禁用
+	//<span class="fa fa-lg fa-street-view"></span> 换装已禁用
 	setTimeout(() => {
 		document.getElementById("waifu").style.bottom = 0;
 	}, 0);
@@ -69,8 +70,8 @@ function loadWidget(config) {
 				document.head.appendChild(script);
 			}
 		});
-		document.querySelector("#waifu-tool .fa-user-circle").addEventListener("click", loadOtherModel);
-		document.querySelector("#waifu-tool .fa-street-view").addEventListener("click", loadRandModel);
+	//	document.querySelector("#waifu-tool .fa-user-circle").addEventListener("click", loadOtherModel);
+	//	document.querySelector("#waifu-tool .fa-street-view").addEventListener("click", loadRandModel);
 		document.querySelector("#waifu-tool .fa-camera-retro").addEventListener("click", () => {
 			showMessage("照好了嘛，是不是很可爱呢？QuQ", 6000, 9);
 			Live2D.captureName = "photo.png";
@@ -124,7 +125,7 @@ function loadWidget(config) {
 		} else {
 			text = `欢迎阅读<span>「${document.title.split(" - ")[0]}」</span>`;
 		}
-		showMessage(text, 7000, 8);
+		showMessage(text, 6000, 8);
 	})();
 
 	function showHitokoto() {
@@ -135,7 +136,7 @@ function loadWidget(config) {
 				const text = `这句一言来自 <span>「${result.from}」</span>，是 <span>${result.creator}</span> 在 hitokoto.cn 投稿的。`;
 				showMessage(result.hitokoto, 6000, 9);
 				setTimeout(() => {
-					showMessage(text, 4000, 9);
+					showMessage(text, 3000, 9);
 				}, 6000);
 			});
 	}
@@ -242,9 +243,10 @@ function loadWidget(config) {
 	async function loadOtherModel() {
 		let modelId = localStorage.getItem("modelId");
 		if (useCDN) {
-			if (!modelList) await loadModelList();
+		/*	if (!modelList) await loadModelList();
 			const index = (++modelId >= modelList.models.length) ? 0 : modelId;
-			loadModel(index, 0, modelList.messages[index]);
+			loadModel(index, 0, modelList.messages[index]);*/
+			//将更换模型功能禁用
 		} else {
 			fetch(`${apiPath}switch/?id=${modelId}`)
 				.then(response => response.json())
