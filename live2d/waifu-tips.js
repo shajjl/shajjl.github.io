@@ -136,7 +136,7 @@ function loadWidget(config) {
 				const text = `这句一言来自 <span>「${result.from}」</span>，是 <span>${result.creator}</span> 在 hitokoto.cn 投稿的。`;
 				showMessage(result.hitokoto, 6000, 9);
 				setTimeout(() => {
-					showMessage(text, 3000, 9);
+					showMessage(text, 1500, 9);
 				}, 6000);
 			});
 	}
@@ -265,7 +265,7 @@ function initWidget(config, apiPath) {
 		};
 	}
 	document.body.insertAdjacentHTML("beforeend", `<div id="waifu-toggle">
-			<span>看板娘</span>
+			<span>pio酱</span>
 		</div>`);
 	const toggle = document.getElementById("waifu-toggle");
 	toggle.addEventListener("click", () => {
