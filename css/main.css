@@ -1832,7 +1832,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8e180b;
+  background: #8c6185;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1882,11 +1882,14 @@ pre .javascript .function {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.category-list .category-list-item {
+.category-list {
+  padding-inline-start: 0px;
+}
+.category-list-item {
   display: block;
   margin: 0;
 }
-.category-list .category-list-item a {
+.category-list-item a {
   position: relative;
   box-sizing: border-box;
   padding: 5px 20px;
@@ -1899,10 +1902,10 @@ pre .javascript .function {
   display: block;
   border-bottom-color: rgba(255,255,255,0);
 }
-.category-list .category-list-item a:hover {
+.category-list-item a:hover {
   background: #f9f9f9;
 }
-.category-list .category-list-item br {
+.category-list-item br {
   display: none;
 }
 .sidebar-nav {
