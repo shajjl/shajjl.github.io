@@ -1832,7 +1832,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dd16d0;
+  background: #4a25ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3088,9 +3088,13 @@ pre .javascript .function {
   }
 }
 body {
+  cursor: url("/cur/Arrow.cur"), auto;
   background: url("/images/background1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+a {
+  cursor: url("/cur/Handwriting.cur"), auto;
 }
