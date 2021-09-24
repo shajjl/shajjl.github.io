@@ -950,6 +950,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   line-height: 2;
+  float: right;
 }
 .btn:hover {
   border-color: #222;
@@ -1832,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffff4;
+  background: #ff9d12;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1857,6 +1858,7 @@ pre .javascript .function {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 .categs-of-blogroll {
   font-size: 13px;
@@ -1895,13 +1897,13 @@ pre .javascript .function {
   padding: 5px 20px;
   text-align: left;
   text-decoration: none;
+  font-weight: bold;
   transition-property: background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   display: block;
   border-bottom-color: rgba(255,255,255,0);
-  font-weight: bold;
 }
 .category-list-item a:hover {
   background: #f9f9f9;
