@@ -1901,6 +1901,7 @@ pre .javascript .function {
   transition-delay: 0s;
   display: block;
   border-bottom-color: rgba(255,255,255,0);
+  font-weight: bold;
 }
 .category-list-item a:hover {
   background: #f9f9f9;
